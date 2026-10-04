@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MM DIANDRA FURNITURE | Toko Furniture Mewah Minimalis & Wood</title>
+  <meta name="description"
+    content="MM Diandra Furniture menghadirkan mahakarya furnitur mewah minimalis berbahan kayu jati solid Perhutani pilihan, marmer alam, dan kain premium. Melayani pesanan custom hunian mewah, villa, dan apartemen." />
+  <meta name="keywords"
+    content="furniture mewah, mebel minimalis, custom furniture, kayu solid, furniture indonesia, mm diandra furniture, luxury interior" />
+  <meta name="author" content="MM Diandra Furniture" />
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="MM DIANDRA FURNITURE | Luxury Minimalist Bespoke Furniture" />
+  <meta property="og:description"
+    content="Harmoni kemewahan minimalis & ketahanan multiplek pilihan. Hadirkan keanggunan arsitektural dalam setiap sudut hunian Anda." />
+  <meta property="og:image"
+    content="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=85" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- ==========================================================================
+       Top Announcement Bar
+       ========================================================================== -->
+  <aside class="announcement-bar" aria-label="Pengumuman Spesial">
+    <div class="bar-left">
+      <span><i class="fa-solid fa-gem" style="color: var(--gold-primary);"></i> Koleksi Eksklusif 2026: <strong>Gratis
+          Desain 3D &amp; Pengukuran Ruangan</strong></span>
+      <span>•</span>
+      <span>Garansi Rangka Kayu Multiplek 10 Tahun</span>
+    </div>
+    <div class="bar-right">
+      <a href="https://wa.me/6287788252829?text=Halo%20MM%20DIANDRA%20FURNITURE,%20saya%20ingin%20konsultasi/pesan%20furniture%20custom."
+        target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-whatsapp"></i> Concierge VIP: 0877-8825-2829
+      </a>
+      <a href="#showroomSection">
+        <i class="fa-regular fa-clock"></i> Showroom: 07.00 - 20.00 WIB
+      </a>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       Header & Navigation
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo" aria-label="MM Diandra Furniture Home">
+        <div class="logo-emblem" aria-hidden="true">MM</div>
+        <div class="logo-text-group">
+          <span class="logo-title">MM Diandra</span>
+          <span class="logo-subtitle">Furniture &bull; Pemalang</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-menu" aria-label="Menu Utama">
+        <a href="#hero" class="nav-link active">Beranda</a>
+        <a href="#katalog" class="nav-link">Koleksi</a>
+        <a href="#bespokeCalculator" class="nav-link">Simulasi Kustom</a>
+        <a href="#filosofi" class="nav-link">Keunggulan</a>
+        <a href="#heritage" class="nav-link">Pengrajin</a>
+        <a href="#portofolio" class="nav-link">Portofolio</a>
+        <a href="#testimoni" class="nav-link">Klien</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Live Instant Search -->
+        <button class="action-btn" id="searchToggleBtn" aria-label="Cari Furnitur" title="Cari Furnitur">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <!-- Wishlist Drawer Trigger -->
+        <button class="action-btn" id="wishlistBtn" aria-label="Wishlist Tersimpan" title="Daftar Impian">
+          <i class="fa-regular fa-heart"></i>
+          <span class="badge-count" id="wishlistCountBadge" style="display: none;">0</span>
+        </button>
+
+        <!-- Theme Toggler (Dark / Light) -->
+        <button class="action-btn theme-toggle-btn" id="themeToggle" aria-label="Ganti Tema"
+          title="Ganti Mode Tampilan">
+          <i class="fa-regular fa-sun"></i>
+        </button>
+
+        <!-- Direct WhatsApp Consultation CTA -->
+        <a href="https://wa.me/6287788252829?text=Halo%20MM%20DIANDRA%20FURNITURE,%20saya%20ingin%20konsultasi/pesan%20furniture%20custom."
+          target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+          style="padding: 10px 20px; font-size: 0.8rem;">
+          <i class="fa-brands fa-whatsapp"></i> Konsultasi VIP
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="action-btn mobile-menu-btn" id="mobileMenuBtn" aria-label="Buka Menu Navigasi">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <aside id="mobileNavDrawer" class="mobile-nav-drawer" aria-label="Menu Mobile">
+    <div class="mobile-nav-header">
+      <div class="brand-logo">
+        <div class="logo-emblem">MM</div>
+        <div class="logo-text-group">
+          <span class="logo-title">MM Diandra</span>
+          <span class="logo-subtitle">Furniture &bull;</span>
+        </div>
+      </div>
+      <button class="btn-icon" id="closeMobileNavBtn" aria-label="Tutup Menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="mobile-nav-links">
+      <a href="#hero" class="mobile-nav-link">Beranda <i class="fa-solid fa-arrow-right"
+          style="font-size: 0.8rem; opacity: 0.5;"></i></a>
+      <a href="#katalog" class="mobile-nav-link">Koleksi Eksklusif <i class="fa-solid fa-arrow-right"
+          style="font-size: 0.8rem; opacity: 0.5;"></i></a>
+      <a href="#bespokeCalculator" class="mobile-nav-link">Simulasi Kustom <i class="fa-solid fa-arrow-right"
+          style="font-size: 0.8rem; opacity: 0.5;"></i></a>
+      <a href="#filosofi" class="mobile-nav-link">Keunggulan &amp; SVLK <i class="fa-solid fa-arrow-right"
+          style="font-size: 0.8rem; opacity: 0.5;"></i></a>
+      <a href="#heritage" class="mobile-nav-link">Pengrajin Pemalang <i class="fa-solid fa-arrow-right"
+          style="font-size: 0.8rem; opacity: 0.5;"></i></a>
+      <a href="#portofolio" class="mobile-nav-link">Portofolio Hunian <i class="fa-solid fa-arrow-right"
+          style="font-size: 0.8rem; opacity: 0.5;"></i></a>
+      <a href="#testimoni" class="mobile-nav-link">Testimoni Klien <i class="fa-solid fa-arrow-right"
+          style="font-size: 0.8rem; opacity: 0.5;"></i></a>
+      <a href="#faq" class="mobile-nav-link">FAQ <i class="fa-solid fa-arrow-right"
+          style="font-size: 0.8rem; opacity: 0.5;"></i></a>
+      <a href="#showroomSection" class="mobile-nav-link">Showroom &amp; Kontak <i class="fa-solid fa-arrow-right"
+          style="font-size: 0.8rem; opacity: 0.5;"></i></a>
+    </div>
+    <div class="mobile-nav-footer">
+      <a href="https://wa.me/6287788252829?text=Halo%20MM%20DIANDRA%20FURNITURE,%20saya%20ingin%20konsultasi/pesan%20furniture%20custom."
+        target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;">
+        <i class="fa-brands fa-whatsapp"></i> Chat Desainer via WA
+      </a>
+    </div>
+  </aside>
+
+  <main id="mainContent">
+
+    <!-- ==========================================================================
+         Hero Section: Editorial Splendor
+         ========================================================================== -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-overlay"></div>
+      <div class="container hero-grid">
+        <!-- Left: Text Content -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulsing-dot" aria-hidden="true"></span>
+            <span>Koleksi Eksklusif 2026 &bull; Quiet Luxury</span>
+          </div>
+
+          <h1 class="hero-title">
+            Harmoni Kemewahan <span class="gold-gradient-text">Minimalis</span> &amp; Ketahanan Kayu Pilihan
+          </h1>
+
+          <p class="hero-description">
+            MM Diandra Furniture menghadirkan produk lemari pakaian, kitchen set, partisi, dipan, dan furniture lain
+            dengan harga bersahabat dan kualiatas bermutu.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#katalog" class="btn btn-primary">
+              <i class="fa-solid fa-compass"></i> Jelajahi Koleksi
+            </a>
+            <a href="#bespokeCalculator" class="btn btn-secondary">
+              <i class="fa-solid fa-sliders"></i> Simulasi Desain Kustom
+            </a>
+          </div>
+
+          <!-- Quick Stats Row -->
+          <div class="hero-stats-row">
+            <div class="stat-item">
+              <span class="stat-number">1.200+</span>
+              <span class="stat-label">Hunian Mewah Dipercaya</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Kayu Triplek Solid</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">10 Thn</span>
+              <span class="stat-label">Garansi Struktur Rangka</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Visual Showcase with Interactive Hotspots -->
+        <div class="hero-visual">
+          <div class="hero-image-wrapper">
+            <img src="assets/images/firstpartisi.png" alt="MM Diandra Luxury Minimalist Interior Showcase" />
+
+            <!-- Hotspot 1: Curved Sofa -->
+            <img src="assets/images/nama-foto-sofa.jpg" alt="...">
+            <h3>Diandra Elysian Curved Bouclé Sofa</h3>
+            <div class="hotspot-point pos-1" onclick="openQuickView('elysian-sofa')" title="Lihat Diandra Elysian Sofa">
+              <div class="hotspot-tooltip">
+                <h4>Diandra</h4>
+                <span> &bull;</span>
+              </div>
+            </div>
+
+            <!-- Hotspot 2: Coffee Table -->
+            <div class="hotspot-point pos-2" onclick="openQuickView('seraphina-coffee-table')"
+              title="Lihat Seraphina Coffee Table">
+              <div class="hotspot-tooltip">
+                <h4>Seraphina Travertine Table</h4>
+                <span>Rp 11.500.000 &bull; Walnut Base</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Artisan Card -->
+          <div class="hero-floating-card">
+            <div class="floating-card-icon">
+              <i class="fa-solid fa-award"></i>
+            </div>
+            <div class="floating-card-text">
+              <h5>Pilihan Beragam</h5>
+              <p>Disesuaikan presisi sesuai denah ruangan Anda</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Brand Pillars: Nilai Keunggulan MM Diandra
+         ========================================================================== -->
+    <section class="section-padding pillars-section" id="filosofi">
+      <div class="container">
+        <div class="section-header">
+          <span class="tagline">Filosofi Kemewahan Kami</span>
+          <h2 class="section-title">Dedikasi Pada Kualitas Tanpa Kompromi</h2>
+          <p class="section-subtitle">
+            Setiap lekukan dan sambungan furnitur MM Diandra dirancang untuk bertahan lintas generasi, mempercantik
+            estetika hunian dengan kenyamanan ergonomis tertinggi.
+          </p>
+        </div>
+
+        <div class="pillars-grid">
+          <!-- Pillar 1 -->
+          <div class="pillar-card">
+            <div class="pillar-icon-box">
+              <i class="fa-solid fa-tree"></i>
+            </div>
+            <h3 class="pillar-title">Tripleks High-Grade Struktural</h3>
+            <p class="pillar-desc">
+              Menggunakan material plywood atau tripleks pilihan berkerapatan tinggi yang tahan kelembapan, memiliki
+              ketahanan struktural yang kokoh, serta tidak mudah melengkung untuk penggunaan jangka panjang.
+            </p>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="pillar-card">
+            <div class="pillar-icon-box">
+              <i class="fa-solid fa-hammer"></i>
+            </div>
+            <h3 class="pillar-title">Kustomisasi Model & Fungsi Tanpa Batas</h3>
+            <p class="pillar-desc">
+              Hadir dalam berbagai pilihan mulai dari lemari pakaian 2 & 3 pintu, partisi ruangan, kitchen set, hingga
+              nakas yang dapat diproduksi secara custom sesuai ukuran dan tata letak ruangan Anda.
+            </p>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="pillar-card">
+            <div class="pillar-icon-box">
+              <i class="fa-solid fa-compass-drafting"></i>
+            </div>
+            <h3 class="pillar-title">Sentuhan Finishing Mewah Presisi Tinggi</h3>
+            <p class="pillar-desc">
+              Dilapisi pilihan finishing premium seperti Melamik, Duco, hingga HPL yang diaplikasikan secara halus dan
+              rapi untuk memberikan tampilan estetis, tahan gores, serta mudah dibersihkan.
+            </p>
+          </div>
+
+          <!-- Pillar 4 -->
+          <div class="pillar-card">
+            <div class="pillar-icon-box">
+              <i class="fa-solid fa-truck-ramp-box"></i>
+            </div>
+            <h3 class="pillar-title">Penggarapan Detail & Perakitan Profesional &amp; Setup</h3>
+            <p class="pillar-desc">
+              Dikerjakan oleh tenaga ahli berpengalaman dengan ketelitian pada tiap sambungan dan detail kustomisasi,
+              memastikan furnitur terpasang presisi dan siap mempercantik interior hunian Anda.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Product Catalog & Interactive Showcase
+         ========================================================================== -->
+    <section class="section-padding catalog-section" id="katalog">
+      <div class="container">
+        <div class="section-header">
+          <span class="tagline">Katalog Signature MM Diandra</span>
+          <h2 class="section-title">Koleksi Terpilih untuk Hunian Berkelas</h2>
+          <p class="section-subtitle">
+            Jelajahi karya terbaik kami yang dirancang dengan estetika minimalis modern, proporsi seimbang, dan
+            kenyamanan tak tertandingi.
+          </p>
+        </div>
+
+        <!-- Catalog Filter & Sorting Bar -->
+        <div class="catalog-filter-bar">
+          <div class="filter-categories" role="tablist">
+            <button class="filter-pill active" data-category="all">Semua Koleksi</button>
+            <button class="filter-pill" data-category="bedroom">Lemari Pakaian</button>
+            <button class="filter-pill" data-category="living">Partisi</button>
+            <button class="filter-pill" data-category="kitchen">Kitchen Set</button>
+            <button class="filter-pill" data-category="work">Ruang Kerja</button>
+            <button class="filter-pill" data-category="study">Ruang Belajar</button>
+          </div>
+
+          <div class="filter-sorting">
+            <label for="sortSelect"><i class="fa-solid fa-arrow-down-short-wide"></i> Urutkan:</label>
+            <select id="sortSelect" class="custom-select">
+              <option value="featured">Koleksi Unggulan</option>
+              <option value="price-low">Harga: Rendah ke Tinggi</option>
+              <option value="price-high">Harga: Tinggi ke Rendah</option>
+              <option value="name">Nama Produk A - Z</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Products Grid Container (Rendered by JS) -->
+        <div class="products-grid" id="productsGrid">
+          <!-- Dynamically populated from PRODUCTS_DATA -->
+        </div>
+
+        <div style="text-align: center; margin-top: 50px;">
+          <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 18px;">
+            Memiliki rancangan arsitektur sendiri atau ingin mengubah dimensi produk di atas?
+          </p>
+          <a href="#bespokeCalculator" class="btn btn-secondary">
+            <i class="fa-solid fa-pencil"></i> Pesan Custom Berdasarkan Kesukaan Anda
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Craftsmanship & Heritage Section
+         ========================================================================== -->
+    <section class="section-padding craft-section" id="heritage">
+      <div class="container">
+        <div class="craft-grid">
+          <!-- Left: Image Composition -->
+          <div class="craft-images-composition">
+            <div class="craft-img-primary">
+              <img src="assets/images/partisipertama.PNG" alt="Maestro Woodcarver MM Diandra" />
+            </div>
+            <div class="craft-img-floating">
+              <img src="assets/images/kitchen-set.jpg" alt="Modern Luxury Minimalist Living Interior" />
+            </div>
+            <div class="craft-experience-badge">
+              <span>15+</span>
+              <small>Tahun Dedikasi Maestro</small>
+            </div>
+          </div>
+
+          <!-- Right: Heritage Story & Step by Step -->
+          <div class="craft-content">
+            <span class="tagline">Panduan / Konsultasi Desain &amp; dengan Pengrajin</span>
+            <h2 class="section-title">Wujudkan Furnitur Impian Sesuai Kebutuhan Anda</h2>
+            <p class="section-subtitle" style="text-align: left; margin-bottom: 24px;">
+              Bingung menentukan model dan ukuran?
+              Kami siap membantu Anda memahami proses pembuatan furnitur custom
+              dari awal hingga terpasang rapi di rumah.
+            </p>
+
+            <div class="craft-steps-list">
+              <div class="craft-step-item">
+                <div class="craft-step-num">01</div>
+                <div class="craft-step-text">
+                  <h4>Pilihan Model Lemari & Kithen Set</h4>
+                  <p>Kenali berbagai konfigurasi lemari 2/3 pintu,
+                    partisi, hingga kitchen set yang cocok untuk denah rumah Anda.</p>
+                </div>
+              </div>
+
+              <div class="craft-step-item">
+                <div class="craft-step-num">02</div>
+                <div class="craft-step-text">
+                  <h4>Fleksibilitas Desain & Budget</h4>
+                  <p>Sesuaikan material, tipe finishing,
+                    dan aksesoris furnitur agar tetap sesuai dengan anggaran Anda.</p>
+                </div>
+              </div>
+
+              <div class="craft-step-item">
+                <div class="craft-step-num">03</div>
+                <div class="craft-step-text">
+                  <h4>Layanan Pengukuran & Layanan Area Jawa Tengah</h4>
+                  <p>Kemudahan konsultasi serta perakitan langsung di lokasi untuk wilayah
+                    Pemalang, Tegal, Pekalongan, Brebes, Batang, Semarang, dan sekitarnya.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Client Real-World Portofolio / Hunian Nyata
+         ========================================================================== -->
+    <section class="section-padding portfolio-section" id="portofolio">
+      <div class="container">
+        <div class="section-header">
+          <span class="tagline">Proyek Realisasi</span>
+          <h2 class="section-title">Galeri Hunian</h2>
+          <p class="section-subtitle">
+            Lihat bagaimana furnitur MM Diandra menyatu anggun dalam berbagai proyek mewah,
+            berkualitas dan modern.
+          </p>
+        </div>
+
+        <div class="portfolio-grid">
+          <!-- Featured Card -->
+          <div class="portfolio-card featured-card">
+            <img src="assets/images/Gb-1.png" alt="Penthouse Project" />
+            <div class="portfolio-overlay">
+              <span class="portfolio-tag">Penthouse &bull; </span>
+              <h3 class="portfolio-title">Ruang Tamu</h3>
+              <span class="portfolio-location"><i class="fa-solid fa-location-dot"></i>
+              </span>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="portfolio-card">
+            <img src="assets/images/KITCHEN-2.PNG" alt="Villa Canggu Bali Project" />
+            <div class="portfolio-overlay">
+              <span class="portfolio-tag">Dapur Kekinian &bull; Rumah Tangga</span>
+              <h3 class="portfolio-title"></h3>
+              <span class="portfolio-location"><i class="fa-solid fa-location-dot"></i></span>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="portfolio-card">
+            <img src="assets/images/Gb-5.png" alt="Residensial Mewah City" />
+            <div class="portfolio-overlay">
+              <span class="portfolio-tag">Kebutuhan Interior &bull; City</span>
+              <h3 class="portfolio-title">Indoor </h3>
+              <span class="portfolio-location"><i class="fa-solid fa-location-dot"></i></span>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="portfolio-card">
+            <img src="assets/images/kitchen-set.jpg" alt="Master Bedroom Indah" />
+            <div class="portfolio-overlay">
+              <span class="portfolio-tag">Dapur Mewah &bull; Elegan</span>
+              <h3 class="portfolio-title"></h3>
+              <span class="portfolio-location"><i class="fa-solid fa-location-dot"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Client Testimonials (Social Proof)
+         ========================================================================== -->
+    <section class="section-padding testimonials-section" id="testimoni">
+      <div class="container">
+        <div class="section-header">
+          <span class="tagline">Pengalaman Klien Kami</span>
+          <h2 class="section-title">Kepercayaan dari Pemilik Hunian &amp; Arsitek</h2>
+          <p class="section-subtitle">
+            Kisah kepuasan para pemilik rumah dan desainer interior terkemuka yang mempercayakan kebutuhan furnitur
+            mereka pada MM Diandra.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Review 1 -->
+          <div class="testimonial-card">
+            <div class="rating-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">
+              ""Lemari pakaian custom dari MM Diandra pengerjaannya sangat rapi. Pintu sliding-nya halus banget saat
+              digeser,
+              relnya kokoh, dan pembagian sekat di dalamnya pas banget sesuai kebutuhan pakaian kami. Hasil aslinya
+              persis sama seperti desain awal."
+            </p>
+            <div class="client-profile">
+              <img src="assets/images/PP.jpg" alt="Ibu Renata W." class="client-avatar" />
+              <div class="client-info">
+                <h5>Renata</h5>
+                <span>Pemilik Hunian di Semarang</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="testimonial-card">
+            <div class="rating-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">
+              "Sangat puas pesan kitchen set di MM Diandra. Material lapisannya tahan air, engsel pintunya sudah
+              slow-motion,
+              dan pencahayaan LED di bawah kabinet bikin dapur kelihatan mewah banget. Pemasangan dari timnya juga
+              sangat bersih dan tepat waktu."
+            </p>
+            <div class="client-profile">
+              <img src="assets/images/PP.jpg" alt="Bpk. Hendra Kusuma" class="client-avatar" />
+              <div class="client-info">
+                <h5>Hendra Kusuma</h5>
+                <span>Principal Architect - Studio Arsitektur Tegal</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="testimonial-card">
+            <div class="rating-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="testimonial-quote">
+              "Partisi penyekat ruang tamu dan ruang keluarga dari MM Diandra jadi focal point terbaik di rumah kami.
+              Kayunya kokoh,
+              finishing-nya halus sekali, dan buffet bawahnya sangat fungsional untuk simpan barang. Recommended
+              vendor!"
+            </p>
+            <div class="client-profile">
+              <img src="assets/images/PP.jpg" alt="dr. Stephanie M." class="client-avatar" />
+              <div class="client-info">
+                <h5>Amanda & Rizky</h5>
+                <span>Pemilik Hunian Pemalang</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FAQ Accordion
+         ========================================================================== -->
+    <section class="section-padding faq-section" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <span class="tagline">Pertanyaan Umum</span>
+          <h2 class="section-title">Semua Hal yang Perlu Anda Ketahui</h2>
+          <p class="section-subtitle">
+            Informasi lengkap seputar pemesanan custom, garansi kayu, pengiriman, dan tahapan konsultasi desain.
+          </p>
+        </div>
+
+        <div class="faq-container">
+          <!-- FAQ 1 -->
+          <div class="faq-item active">
+            <button class="faq-question">
+              <span>Apakah ukuran, tata letak, dan jenis finishing bisa dicustom sesuai denah rumah?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer" style="max-height: 200px;">
+              <p>
+                Tentu saja! Keunggulan utama MM Diandra Furniture adalah fleksibilitas custom 100%. Anda
+                dapat menyesuaikan ukuran (panjang, lebar, tinggi), tata letak kompartemen, hingga pilihan
+                finishing favorit seperti Melamik, Duco, atau HPL sesuai konsep interior hunian Anda.
+                Tim kami juga siap membantu pengukuran langsung ke lokasi maupun penyesuaian desain. &amp;
+
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Bagaimana garansi produk dan ketahanan bahan tripleks terhadap rayap?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Setiap produk MM Diandra dilindungi oleh Garansi Rangka & Struktur hingga 10 Tahun.
+                Kami hanya menggunakan plywood/tripleks kelas premium yang diproses secara khusus
+                dan dilapisi finishing pelindung (Melamik, Duco, atau HPL) yang rapat,
+                sehingga bahan menjadi sangat tahan terhadap serangan rayap, dan tidak mudah melengkung.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Apakah MM Diandra Furniture melayani pengiriman ke luar kota dan luar pulau?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Ya, kami melayani pengiriman antar-kota di wilayah Jawa Tengah (khususnya Pemalang, Tegal, Pekalongan,
+                Brebes, Batang, Semarang, dan area sekitarnya).
+                Untuk menjaga kualitas pelayanan dan pengawasan instalasi, saat ini layanan kami belum mencakup
+                pengiriman ke luar pulau.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Bagaimana sistem pembayaran dan tahapan pengerjaan kustom?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Pemesanan diawali dengan Down Payment (DP) sebesar 50% setelah desain 3D disetujui. Selama proses
+                pengerjaan, tim kami akan mengirimkan update foto dan video progres secara berkala. Pelunasan sisa 50%
+                dilakukan setelah furnitur selesai melalui tahap Quality Control (QC) dan siap dikirimkan.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Apakah bisa menjadwalkan kunjungan ke showroom atau workshop?</span>
+              <i class="fa-solid fa-chevron-down faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Sangat dipersilakan! Anda dapat menjadwalkan kunjungan privat ke Gallery Showroom kami di Kabupaten
+                Pemalang atau melihat langsung proses pengerjaan di Workshop MM DIANDRA FURNITURE dengan melakukan
+                reservasi
+                melalui form di bawah maupun via WhatsApp Concierge kami.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         VIP Consultation & Showroom Section
+         ========================================================================== -->
+    <section class="section-padding consult-section" id="showroomSection">
+      <div class="container">
+        <div class="consult-box">
+          <!-- Left: Info & Contacts -->
+          <div class="consult-info">
+            <span class="tagline">Layanan Konsultasi VIP</span>
+            <h3>Wujudkan Ruang Idaman Bersama Desainer Kami</h3>
+            <p>
+              Konsultasikan denah rumah, preferensi material, dan anggaran Anda bersama tim desain interior MM Diandra
+              secara bebas biaya. Kami siap membantu menciptakan hunian bernuansa tenang dan mewah.
+            </p>
+
+            <div class="contact-meta-list">
+              <div class="contact-meta-item">
+                <div class="contact-meta-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="contact-meta-text">
+                  <h6>Gallery Showroom</h6>
+                  <span>Jl. Desa Kedungbanjar, RT 03/RW 01, No. 45, Kedungbanjar, Taman, Kab. Pemalang
+                    52361&bull; Workshop: Pemalang, Jawa Tengah</span>
+                </div>
+              </div>
+
+              <div class="contact-meta-item">
+                <div class="contact-meta-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                <div class="contact-meta-text">
+                  <h6>WhatsApp Concierge</h6>
+                  <span>0877-8825-2829</span>
+                </div>
+              </div>
+
+              <div class="contact-meta-item">
+                <div class="contact-meta-icon"><i class="fa-regular fa-envelope"></i></div>
+                <div class="contact-meta-text">
+                  <h6>Email Resmi</h6>
+                  <span>mmdiandrafurniture@gmail.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Booking Form -->
+          <div class="consult-form-wrapper">
+            <form id="vipConsultationForm" class="consult-form">
+              <div class="form-group">
+                <label for="consultName" class="form-label">Nama Lengkap</label>
+                <input type="text" id="consultName" class="form-input" placeholder="Contoh: Bpk. WIjaya" required />
+              </div>
+
+              <div class="form-group">
+                <label for="consultPhone" class="form-label">Nomor WhatsApp Aktif</label>
+                <input type="tel" id="consultPhone" class="form-input" placeholder="087788252829" required />
+              </div>
+
+              <div class="form-group">
+                <label for="consultRoom" class="form-label">Tipe Ruangan / Project</label>
+                <select id="consultRoom" class="form-select">
+                  <option value="Living Room / Ruang Tamu">Ruang Tamu</option>
+                  <option value="Dining Room / Ruang Makan">Ruang Makan</option>
+                  <option value="Master Bedroom / Kamar Tidur">Kamar Tidur</option>
+                  <option value="Full House / 1 Rumah Penuh">Satu Rumah Penuh</option>
+                  <option value="Villa / Cafe / Komersial">Villa / Cafe / Komersial</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="consultBudget" class="form-label">Estimasi Rencana Anggaran</label>
+                <select id="consultBudget" class="form-select">
+
+              </div>
+
+              <div class="form-group">
+                <label for="consultNotes" class="form-label">Catatan Tambahan (Opsional)</label>
+                <textarea id="consultNotes" class="form-textarea"
+                  placeholder="Contoh: Rumah gaya Japandi modern, butuh sofa lengkung 2.8m dan meja makan jati 8 orang..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">
+                <i class="fa-solid fa-calendar-check"></i> Jadwalkan Konsultasi VIP Sekarang
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Col 1: Bio -->
+        <div class="footer-brand-info">
+          <div class="brand-logo">
+            <div class="logo-emblem">MM</div>
+            <div class="logo-text-group">
+              <span class="logo-title">MM Diandra</span>
+              <span class="logo-subtitle">Furniture &bull; Pemalang</span>
+            </div>
+          </div>
+          <p>
+            MM Diandra Furniture adalah representasi kemewahan minimalis Indonesia. Menyatukan bahan multiplek, pilihan
+            finishing melamik, duco, HPL dan kenyamanan modern untuk hunian berkelas tinggi.
+          </p>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/mmdiandra_furniture?stkn=MnR1Nmh2czBvenNt" target="_blank"
+              rel="noopener noreferrer" class="footer-social-link" aria-label="Instagram MM Diandra"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/6287788252829?text=Halo%20MM%20DIANDRA%20FURNITURE,%20saya%20ingin%20konsultasi/pesan%20furniture%20custom."
+              target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="WhatsApp MM Diandra"><i
+                class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="footer-social-link"
+              aria-label="Pinterest MM Diandra"><i class="fa-brands fa-pinterest"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-link"
+              aria-label="YouTube MM Diandra"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation -->
+        <div>
+          <h4 class="footer-col-title">Navigasi Utama</h4>
+          <ul class="footer-links-list">
+            <li><a href="#hero">Beranda</a></li>
+            <li><a href="#katalog">Koleksi Eksklusif</a></li>
+            <li><a href="#bespokeCalculator">Simulasi Kustom</a></li>
+            <li><a href="#filosofi">Filosofi &amp; Bahan Triplek</a></li>
+            <li><a href="#heritage">Pengrajin Mebel Pemalang</a></li>
+            <li><a href="#portofolio">Portofolio Hunian</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Koleksi Populer -->
+        <div>
+          <h4 class="footer-col-title">Koleksi Populer</h4>
+          <ul class="footer-links-list">
+            <li><a href="#katalog" onclick="document.querySelector('[data-category=living]').click()">Lemari Pakaian
+
+              </a></li>
+            <li><a href="#katalog" onclick="document.querySelector('[data-category=dining]').click()">Partisi
+              </a></li>
+            <li><a href="#katalog" onclick="document.querySelector('[data-category=bedroom]').click()">Kitchen Set
+              </a></li>
+            <li><a href="#katalog" onclick="document.querySelector('[data-category=accents]').click()">Ruang Kerja
+              </a></li>
+            <li><a href="#katalog" onclick="document.querySelector('[data-category=living]').click()">Ruang Belajar
+              </a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: VIP Newsletter -->
+        <div>
+          <h4 class="footer-col-title">VIP Private Club</h4>
+          <p style="font-size: 0.85rem; color: #8c8982; line-height: 1.6; margin-bottom: 12px;">
+            Dapatkan katalog edisi terbatas terbaru dan undangan pameran privat MM Diandra langsung ke email Anda.
+          </p>
+          <form class="newsletter-form"
+            onsubmit="event.preventDefault(); showToast('Terima kasih! Anda terdaftar dalam VIP Club MM Diandra.'); this.reset();">
+            <input type="email" class="newsletter-input" placeholder="Masukkan alamat email..." required />
+            <button type="submit" class="btn btn-primary" style="padding: 10px 16px; font-size: 0.8rem;">Daftar</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 <strong>MM DIANDRA FURNITURE</strong>. Hak Cipta Dilindungi Undang-Undang.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#">Kebijakan Privasi</a>
+          <a href="#">Ketentuan Garansi 10 Tahun</a>
+          <a href="#">Sertifikasi Multiplek</a>
+          <a href="#">Peta Lokasi Showroom</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Quick View Modal
+       ========================================================================== -->
+  <div class="modal-backdrop" id="quickViewModal" role="dialog" aria-modal="true" aria-label="Detail Produk">
+    <div class="modal-card">
+      <button class="modal-close-btn" onclick="closeQuickView()" aria-label="Tutup Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div id="quickViewContent">
+        <!-- Injected dynamically via openQuickView(id) -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Wishlist Drawer
+       ========================================================================== -->
+  <div class="drawer-backdrop" id="wishlistBackdrop"></div>
+  <aside class="drawer-panel" id="wishlistDrawer" aria-label="Daftar Impian Anda">
+    <div class="drawer-header">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <i class="fa-solid fa-heart" style="color: var(--gold-primary);"></i>
+        <h3>Daftar Impian Saya</h3>
+      </div>
+      <button class="btn-icon" id="closeWishlistBtn" aria-label="Tutup Wishlist">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="drawer-body" id="wishlistItemsList">
+      <!-- Items dynamically populated -->
+    </div>
+
+    <div class="drawer-footer">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px;">
+        <span style="color: var(--text-muted); font-size: 0.88rem;">Total Estimasi:</span>
+        <span id="wishlistTotalAmount"
+          style="font-family: var(--font-serif); font-size: 1.4rem; font-weight: 600; color: var(--gold-primary);">Rp
+          0</span>
+      </div>
+      <a href="#" id="btnShareWishlistWa" target="_blank" class="btn btn-primary" style="width: 100%;">
+        <i class="fa-brands fa-whatsapp"></i> Konsultasikan Daftar Ini via WA
+      </a>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       Instant Search Modal
+       ========================================================================== -->
+  <div class="search-modal" id="searchModal">
+    <button class="modal-close-btn" id="closeSearchBtn" style="top: 24px; right: 24px;" aria-label="Tutup Pencarian">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <div class="search-modal-box">
+      <div class="search-modal-input-wrap">
+        <input type="text" id="searchModalInput" class="search-modal-input"
+          placeholder="Cari sofa, meja makan jati, kredensa, atau bahan..." />
+      </div>
+      <div class="search-results-list" id="searchResultsContainer"></div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Floating WhatsApp Concierge & Scroll-to-Top
+       ========================================================================== -->
+  <div class="floating-concierge">
+    <div class="concierge-popover" id="conciergeBubble">
+      <div style="font-weight: 600; margin-bottom: 2px;">Butuh Bantuan Desain?</div>
+      <div style="color: var(--text-secondary);">Konsultan MM Diandra siap membantu memilih produk;
+      </div>
+    </div>
+    <a href="https://wa.me/6287788252829?text=Halo%20MM%20DIANDRA%20FURNITURE,%20saya%20ingin%20konsultasi/pesan%20furniture%20custom."
+      target="_blank" rel="noopener noreferrer" class="concierge-wa-btn" aria-label="Chat WhatsApp Concierge"
+      title="Chat Langsung via WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Kembali ke Atas" title="Kembali ke Atas">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>
